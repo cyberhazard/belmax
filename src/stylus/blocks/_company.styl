@@ -1,5 +1,24 @@
 .Company
+  position relative
   padding 13rem 0 16rem
+  &:before
+    content 'ФЛОТ'
+    position absolute
+    left -8%
+    bottom 0
+    font-size 22rem
+    font-weight 800
+    opacity 0.04
+    z-index -1
+  &:after
+    content 'СУДОХОДСТВО'
+    position absolute
+    right -8%
+    top 14%
+    font-size 12rem
+    font-weight 800
+    opacity 0.04
+    z-index -1
   &__heading
     display flex
     justify-content flex-start
