@@ -1,5 +1,5 @@
 
-const tabsClick = function(){
+const flotTabs = function(){
   if(!document.querySelector('.Flot__content')) return null
   const tabs = [...document.querySelectorAll('.Flot__tab')]
   const contents = [...document.querySelectorAll('.Flot__block')]
@@ -9,6 +9,21 @@ const tabsClick = function(){
       target.classList.add('Flot__tab_active')
       contents.forEach(el=>el.classList.remove('Flot__block_active'))
       contents[tabs.findIndex(el=>el===target)].classList.add('Flot__block_active')
+    }
+  })
+}()
+
+const contactsTabs = function(){
+  if(!document.querySelector('.Contacts')) return null
+  const tabs = [...document.querySelectorAll('.Contacts__tab')]
+  console.log(tabs)
+  const contents = [...document.querySelectorAll('.Contacts__content')]
+  tabs.forEach((tab,i)=>{
+    tab.onclick = ({target}) =>{
+      tabs.forEach(tab=>tab.classList.remove('Contacts__tab_active'))
+      tab.classList.add('Contacts__tab_active')
+      contents.forEach(el=>el.classList.remove('Contacts__content_active'))
+      contents[tabs.findIndex(el=>el===tab)].classList.add('Contacts__content_active')
     }
   })
 }()
