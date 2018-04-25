@@ -1,0 +1,130 @@
+.Contacts
+  &__heading
+    text-align center
+    margin-bottom 4.8rem
+  &__subtitle
+    font-weight 600
+    opacity 0.2
+    font-size 1.8rem
+  &__title
+    font-family RobotoSlab
+    font-weight 700
+    font-size 4.6rem
+    font-weight 700
+    line-height 3.6rem
+    &_small
+      font-size 3rem
+      margin-bottom 3.4rem
+  &__office
+    text-align center
+  &__tabs
+    display flex
+    justify-content space-between
+    align-items stretch
+    width 100%
+    max-width 110rem
+    margin 0 auto
+    margin-bottom 7.6rem
+  &__tab
+    max-width 36rem
+    display flex
+    justify-content space-between
+    align-items center
+    padding 2.2rem 3.4rem 3rem
+    border 0.1rem solid #EDEDED
+    border-radius 10rem
+    cursor pointer
+    transition 0.3s
+    &_active
+      background #0690AF
+      color white
+    &_address
+      text-align left
+    &_pin
+      pointer-events: none;
+      width 3.2rem
+      height 3.2rem
+      border 0.1rem solid #EDEDED
+      border-radius 50%
+      margin-right 2rem
+      padding: 0.4rem;
+    &_city
+      font-family RobotoSlab
+      font-weight 700
+      font-size 2.4rem
+      margin-bottom 1rem
+    &_where
+      display flex
+      align-items center
+      & svg
+        margin-right 0.8rem
+  &__map
+    height 76rem
+    &_img
+      width 100%
+      object-fit contain
+  &__content
+    position relative
+    display none
+    &_active
+      display block
+  &__form
+    position absolute
+    top 0
+    right 10%
+    background white
+    padding 6rem 5rem 7.4rem
+    color black
+    box-shadow 0 0.1rem 0.24rem rgba(0,0,0,0.08)
+    &_title
+      display flex
+      justify-content flex-start
+      align-items center
+      margin-bottom 3rem
+    &_img
+      margin-right 1.4rem
+    &_city
+      font-family RobotoSlab
+      font-weight 700
+      font-size 3rem
+    &_item
+      margin-bottom 2.4rem
+      &:last-child
+        margin-bottom 5.4rem
+    &_subtitle
+      font-size 1.6rem
+      font-family OpenSans
+      font-weight 700
+      margin-bottom 0.6rem
+    &_line
+      display flex
+      justify-content flex-start
+      align-items center
+      & img
+        margin-right 1rem
+    &_link
+      font-size 1.6rem
+      color black
+      font-weight 400
+    &_button
+      display inline-flex
+      justify-content center
+      align-items center
+      padding 1.6rem 4rem
+      border-radius 10rem
+      font-size 1.8rem
+      color white
+      background #0690AF
+      cursor pointer
+      & img
+        margin-right 1rem
+
+
+.Contacts__tab_active svg path
+  fill white
+.Contacts__tab_active .Contacts__tab_pin_active
+  background white
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition 0.4s
