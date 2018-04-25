@@ -1,0 +1,156 @@
+.Flot
+  padding-bottom 14rem
+  &__heading
+    display flex
+    justify-content center
+    align-items flex-end
+    margin-bottom 5rem
+    &_center
+      margin 0 10rem
+  &__subtitle
+    font-weight 600
+    opacity 0.2
+    font-size 1.8rem
+    margin-bottom 1rem
+  &__title
+    font-size 4.6rem
+    font-weight 700
+    line-height 3.6rem
+  &__tabs
+    width 100%
+    max-width 93rem
+    display flex
+    justify-content space-between
+    align-items center
+    padding 0.8rem
+    margin 0 auto
+    border 0.1rem solid #CACACA
+    border-radius 10rem
+    margin-bottom 6rem
+  &__tab
+    width 33%
+    padding 1.8rem 3.8rem
+    border-radius 10rem
+    text-align center
+    font-size 1.8rem
+    font-weight 700
+    transition 0.3s
+    cursor pointer
+    &_active
+      background #0690AF
+      color white
+    &:hover
+      background #0690AF
+      color white
+  &__name
+    font-size 3rem
+    font-weight 700
+    font-family RobotoSlab
+    margin-bottom 3rem
+  &__category
+    font-size 2rem
+    font-weight 700
+    border-bottom 1px solid #EDEDED
+    padding-bottom 0.8rem
+    &_block
+      display flex
+      justify-content space-between
+      align-items flex-start
+      flex-wrap wrap
+      padding 2rem 0 2.6rem
+      margin-bottom 3rem
+      &_bb
+        border-bottom 1px solid #EDEDED
+    &_item
+      width 48%
+      font-size 1.6rem
+      font-weight 400
+      margin-bottom 1rem
+      color black
+      & span
+        font-weight 700
+        margin-right 0.4rem
+      &_more
+        position relative
+        color #0690AF
+        cursor pointer
+        &:after
+          content '>'
+          top 0.2rem
+          left 17rem
+          position absolute
+        &:before
+          content ''
+          bottom -0.4rem
+          width 100%
+          max-width 16rem
+          position absolute
+          left 0
+          border-bottom 0.1rem dashed #0690AF
+  &__block
+    display none
+    justify-content space-between
+    align-items flex-start
+    &_active
+      display flex
+  &__left
+    width 48%
+  &__right
+    width 48%
+  &__slider
+    &_wrap
+      padding 0 2rem
+      position relative
+    &_img
+      width 100%
+      object-fit cover
+    &_button
+      background: #0690AF;
+      border-radius: 50%;
+      width: 6rem;
+      height: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items center
+      &_next
+        right: -1rem
+        & svg
+          margin-left: 0.6rem;
+      &_prev
+        left: -1rem
+        & svg
+          margin-right: 0.6rem;
+      & svg
+        width 3rem
+        height 3rem
+        & path
+          fill white
+
+.Flot__right .swiper-button-disabled
+  background white
+  opacity 1
+  & svg
+    & path
+      fill RGB(206, 206, 206)
+
+.Flot__slider_first Flot__slider_wrapper
+  height 38rem
+.Flot__slider_first
+  margin-bottom 3rem
+.Flot__slider_thumb img
+  width 100%
+  object-fit cover
+  height 11rem
+
+.Flot__slider_thumb .swiper-wrapper {
+  display flex
+  justify-content space-between
+}
+.Flot__slider_thumb .swiper-slide {
+  opacity: 0.3;
+  transition 0.3s
+  cursor pointer
+}
+.Flot__slider_thumb .swiper-slide-active {
+  opacity: 1;
+}
