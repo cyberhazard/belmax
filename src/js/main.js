@@ -16,7 +16,6 @@ const flotTabs = function(){
 const contactsTabs = function(){
   if(!document.querySelector('.Contacts')) return null
   const tabs = [...document.querySelectorAll('.Contacts__tab')]
-  console.log(tabs)
   const contents = [...document.querySelectorAll('.Contacts__content')]
   tabs.forEach((tab,i)=>{
     tab.onclick = ({target}) =>{
@@ -48,9 +47,10 @@ const flotSlider = function(slider,thumb){
     galleryTop.controller.control = galleryThumbs;
     galleryThumbs.controller.control = galleryTop;
 }
-flotSlider('#Flot-first-top','#Flot-first-thumb')
+flotSlider('#Flot-first-top','#Flot-first-thumb');
 // flotSlider('#Flot-second-top','#Flot-second-thumb')
 // flotSlider('#Flot-third-top','#Flot-third-thumb')
 
-document.querySelectorAll('.Gallery__top', '.Gallery__bottom')
+[document.querySelector('.Gallery__top'),document.querySelector('.Gallery__bottom')]
   .forEach(lightGallery)
+
