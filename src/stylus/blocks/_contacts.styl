@@ -20,7 +20,7 @@
   &__tabs
     display flex
     justify-content space-between
-    align-items stretch
+    align-items center
     width 100%
     max-width 110rem
     margin 0 auto
@@ -41,13 +41,23 @@
     &_address
       text-align left
     &_pin
-      pointer-events: none;
-      width 3.2rem
-      height 3.2rem
+      display flex
+      justify-content center
+      align-items center
+      width 32px
+      height 32px
       border 0.1rem solid #EDEDED
       border-radius 50%
       margin-right 2rem
-      padding: 0.4rem;
+      padding 6px
+      &_active
+        opacity 0
+        background white
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        transition 0.4s
+
     &_city
       font-family RobotoSlab
       font-weight 700
@@ -123,8 +133,4 @@
 .Contacts__tab_active svg path
   fill white
 .Contacts__tab_active .Contacts__tab_pin_active
-  background white
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  transition 0.4s
+  opacity 1
