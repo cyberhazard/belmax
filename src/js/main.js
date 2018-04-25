@@ -51,3 +51,6 @@ const flotSlider = function(slider,thumb){
 flotSlider('#Flot-first-top','#Flot-first-thumb')
 // flotSlider('#Flot-second-top','#Flot-second-thumb')
 // flotSlider('#Flot-third-top','#Flot-third-thumb')
+
+document.querySelectorAll('.Gallery__top', '.Gallery__bottom')
+  .forEach(lightGallery)
