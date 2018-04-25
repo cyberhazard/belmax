@@ -1,4 +1,5 @@
 .Flot
+  padding-bottom 14rem
   &__heading
     display flex
     justify-content center
@@ -96,3 +97,60 @@
     width 48%
   &__right
     width 48%
+  &__slider
+    &_wrap
+      padding 0 2rem
+      position relative
+    &_img
+      width 100%
+      object-fit cover
+    &_button
+      background: #0690AF;
+      border-radius: 50%;
+      width: 6rem;
+      height: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items center
+      &_next
+        right: -1rem
+        & svg
+          margin-left: 0.6rem;
+      &_prev
+        left: -1rem
+        & svg
+          margin-right: 0.6rem;
+      & svg
+        width 3rem
+        height 3rem
+        & path
+          fill white
+
+.Flot__right .swiper-button-disabled
+  background white
+  opacity 1
+  & svg
+    & path
+      fill RGB(206, 206, 206)
+
+.Flot__slider_first Flot__slider_wrapper
+  height 38rem
+.Flot__slider_first
+  margin-bottom 3rem
+.Flot__slider_thumb img
+  width 100%
+  object-fit cover
+  height 11rem
+
+.Flot__slider_thumb .swiper-wrapper {
+  display flex
+  justify-content space-between
+}
+.Flot__slider_thumb .swiper-slide {
+  opacity: 0.3;
+  transition 0.3s
+  cursor pointer
+}
+.Flot__slider_thumb .swiper-slide-active {
+  opacity: 1;
+}
