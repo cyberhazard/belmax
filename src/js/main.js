@@ -54,3 +54,38 @@ flotSlider('#Flot-first-top','#Flot-first-thumb');
 [document.querySelector('.Gallery__top'),document.querySelector('.Gallery__bottom')]
   .forEach(lightGallery)
 
+void function() {
+  const data = {
+    'Санкт-Петербург': {
+      email: 'mail@asda.com',
+      phone: '+7 964 850 49 35',
+      address: 'Пресненская наб. д.6 стр. 2, офис 123'
+    },
+    'Москва': {
+      email: 'val2@asda.com',
+      phone: '+7 964 850 49 35',
+      address: 'Преval3я наб. д.6 стр. 2, офис 123'
+    },
+    'Антверпен': {
+      email: 'val3@asda.com',
+      phone: '+7 964 850 49 35',
+      address: 'Прval3ая наб. д.6 стр. 2, офис 123'
+    },
+  }
+  const select = document.querySelector('.Select');
+  const optionsBlock = document.querySelector('.Select__options');
+  const options = [...document.querySelectorAll('.Select__option')];
+  const label = document.querySelector('.Select__label');
+  const contactsLinks = [...document.querySelectorAll('.Address__link')];
+  select.addEventListener('click', () => select.classList.toggle('active'));
+  select.addEventListener('blur', () => select.classList.remove('active'));
+  options.forEach(option => option.onclick = e => {
+    label.textContent = e.target.textContent;
+    select.dispatchEvent(new CustomEvent('change', {detail: { value: e.target.textContent }}))
+  });
+  select.addEventListener('change', (e) => {
+    contactsLinks[0].textContent = data[e.detail.value].email
+    contactsLinks[1].textContent = data[e.detail.value].phone
+    contactsLinks[2].textContent = data[e.detail.value].address
+  })
+}()

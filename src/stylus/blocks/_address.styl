@@ -1,0 +1,102 @@
+.Address
+  background-color #000C0E
+  position absolute
+  top 0
+  left 0
+  width 100%
+  &__contacts
+    display flex
+    height 100%
+    align-items center
+    width 100%
+    height 100%
+    padding-left 2rem
+  &__link
+    position relative
+    font-family: 'Open Sans'
+    font-size: 1.4rem
+    font-weight: 400
+    color #fff
+    margin-right 10%
+    &:last-child
+      margin-right 0
+    &::before
+      content ''
+      position absolute
+      top 50%
+      right calc(100% + 1rem)
+      transform: translateY(-50%)
+    &:nth-child(1)::before
+      width 1.6rem
+      height 1.2rem
+      background url('/images/Envelope.svg') center center/cover no-repeat
+    &:nth-child(2)::before
+      width 1.4rem
+      height 1.4rem
+      background url('/images/Phone.svg') center center/cover no-repeat
+    &:nth-child(3)::before
+      width .96rem
+      height 1.4rem
+      background url('/images/Place.svg') center center/cover no-repeat
+  &__container
+    display flex
+    justify-content space-between
+    align-items center
+
+.Select
+  background-color #0083A0
+  font-family: 'Open Sans'
+  font-weight: 700
+  font-size: 1.4rem
+  color #fff
+  position relative
+  cursor pointer
+  z-index 1
+  user-select none
+  outline none
+  flex 0 0 auto
+  width 24rem
+  &.active
+    .Select__options
+      display block
+    .Select__label::after
+      transform translateY(-50%) rotate(-180deg)
+  &__label
+    padding 1.5rem 3rem 1.7rem 3rem
+    position relative
+    &::before
+      content: ''
+      display inline-block
+      width 1.53rem
+      height 1.6rem
+      margin-right 1rem
+      vertical-align: bottom
+      transform: translateY(-.2rem)
+      background url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M14.066%207.368c-.482.54-.955%201.12-1.285%201.922a.977.977%200%200%201-.909.611.982.982%200%200%201-.914-.613c-.381-.932-.96-1.567-1.521-2.18-.14-.155-.281-.31-.42-.469l-.019.008c-.546.164-.968.885-.714%201.471.172.402%201.382.326%201.278%201.192-.086.709.845.895%201.175.86.33-.038.837.54.581.795-.254.255-.734.265-.66.922.02.192.6.167.6.457%200%20.291-.3.622-.068.958.05.074.1.13.155.175a6.238%206.238%200%200%201-4.226%201.645c-3.44%200-6.237-2.786-6.237-6.212%200-1.04.258-2.02.714-2.884-.003%201.116.596%202.043.876%202.323.916.91%202.244.623%202.414%201.385.172.76-.911.763-.84%201.344.074.584%201.485.738%201.17%201.275-.416.714.28.765.079%201.646-.109.48.588.574.847.208.197-.28.157-.623.554-1.042.485-.515%201.61-.598%201.485-1.45-.215-1.412-1.594-1.633-2.194-1.964-.683-.372-.515-1.267-.663-1.694-.207-.606-.909.169-1.283-.184-.616-.579.11-1.398.628-1.38%201.09.034%201.426%201.09%201.827%201.054.392-.035.645-.579.714-.868.146-.63-.246-.349-.403-.677-.212-.44.743-.859%201.113-1.182a.495.495%200%200%200%20.12-.14c.111-.216-.034-.38-.28-.53-.493-.297-1.392-.532-1.434-.995-.024-.285.522-.422%201.145-.447.104.005.205.015.308.025.052-.292.136-.579.249-.854a6.987%206.987%200%200%200-.909-.058C3.194%201.82%200%205%200%208.91%200%2012.818%203.194%2016%207.12%2016c3.925%200%207.119-3.18%207.119-7.09%200-.53-.06-1.047-.173-1.542zM11.537.016c-2.01.189-3.386%202.128-3.035%204.108.356%202.011%202.218%202.63%203.142%204.887.083.204.37.205.454.001C13.122%206.51%2015.3%206.02%2015.3%203.415a3.424%203.424%200%200%200-3.763-3.4zm.334%205.202c-1%200-1.811-.807-1.811-1.803%200-.996.81-1.804%201.81-1.804%201.001%200%201.812.808%201.812%201.804s-.811%201.803-1.811%201.803z%22%2F%3E%0A%3C%2Fsvg%3E') center center/cover no-repeat
+    &::after
+      content ''
+      position absolute
+      top 50%
+      right 3rem
+      transform: translateY(-50%)
+      width 1rem
+      height 0.6rem
+      transition transform .2s
+      will-change: transform
+      background url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2010%206%22%3E%0A%20%20%3Cpath%20fill%3D%22%23FFF%22%20fill-rule%3D%22evenodd%22%20d%3D%22M9.4.103A.312.312%200%200%200%209.167%200a.312.312%200%200%200-.23.103L5%204.155%201.062.103A.312.312%200%200%200%20.832%200a.312.312%200%200%200-.23.103L.1.62a.33.33%200%200%200%200%20.474l4.67%204.804A.313.313%200%200%200%205%206a.312.312%200%200%200%20.23-.103L9.9%201.093a.33.33%200%200%200%200-.475L9.4.103z%22%2F%3E%0A%3C%2Fsvg%3E') center center/cover no-repeat
+  &__option
+    padding 1rem 0
+    text-align center
+    cursor pointer
+    transition: color .3s
+    will-change: color
+    &:hover
+      color #fff - 20%
+  &__options
+    display none
+    position absolute
+    top 100%
+    left 0
+    width 100%
+    background-color #0083A0
+    z-index 10
