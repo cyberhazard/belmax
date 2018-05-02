@@ -77,7 +77,7 @@
     position relative
     display none
     &_active
-      display block
+      display flex
   &__form
     position absolute
     top 0
@@ -129,8 +129,51 @@
       & img
         margin-right 1rem
 
-
 .Contacts__tab_active svg path
   fill white
 .Contacts__tab_active .Contacts__tab_pin_active
   opacity 1
+
+@media (max-width 1000px)
+  .Contacts
+    &__tabs
+      justify-content center
+      margin-bottom 6rem
+    &__tab
+      padding 1.8rem 1.6rem
+      margin-right 2rem
+      &:last-child
+        margin-right 0
+      &_where
+        display none
+      &_city
+        font-size 1.6rem
+        margin-bottom 0
+      &_pin
+        width 20px
+        height 20px
+        padding 0
+        &_active
+          width: 14px;
+          height: 14px;
+    &__form
+      display block
+      position relative
+      top 0
+      right 0
+      margin 0 auto 6rem
+    &__mapblock
+      width 100%
+      order 2
+    &__content
+      &_active
+        flex-wrap wrap
+
+@media (max-width 667px)
+  .Contacts
+    &__tabs
+      display block
+    &__tab
+      justify-content flex-start
+      width 80%
+      margin-bottom 1.4rem
