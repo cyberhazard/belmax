@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="52px" viewBox="0 0 50 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-125.0%" y="-100.0%" width="350.0%" height="350.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="News-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="News-Page-(Desktop)" transform="translate(-670.000000, -2191.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="#2" transform="translate(381.000000, 428.000000)">
+                <g id="Buttons" transform="translate(289.000000, 1756.000000)">
+                    <g id="Button-Border">
+                        <g id="Text" transform="translate(9.000000, 9.000000)">
+                            <g id="Right" filter="url(#filter-1)">
+                                <path d="M15.4999801,19.5 C15.2849157,19.5 15.0698778,19.415967 14.9059104,19.2482543 L9.74617016,13.9680363 C9.41794328,13.6321489 9.41794328,13.0875651 9.74617016,12.7518136 C10.0742642,12.4160621 10.6063216,12.4160621 10.9345751,12.7518136 L15.4999801,17.4240426 L20.0654117,12.7519767 C20.3936385,12.4162252 20.9256428,12.4162252 21.2537103,12.7519767 C21.5820966,13.0877282 21.5820966,13.632312 21.2537103,13.9681994 L16.0940497,19.2484174 C15.9300027,19.4161572 15.7149648,19.5 15.4999801,19.5 Z" id="Arrow" transform="translate(15.500000, 16.000000) rotate(-270.000000) translate(-15.500000, -16.000000) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
