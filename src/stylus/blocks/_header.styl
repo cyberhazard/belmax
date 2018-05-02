@@ -73,6 +73,16 @@
     margin-right 5.6rem
     transition: color .3s
     will-change: color
+    &_active
+      color #0083A0
+      &:before
+        content ''
+        width 100%
+        position absolute
+        bottom -0.4rem
+        left 0
+        height 0.2rem
+        background #0083A0
     &:hover
       color #0690AF
     &:last-child
@@ -90,7 +100,18 @@
       border-radius 50%
       background-color #0690AF
 
-
+@media (max-width 1000px)
+  .Header
+    &__heading
+      font-size 3.6rem
+    &__text
+      font-size 1.6rem
+      line-height 2.4rem
+    &__button
+      font-size 1.6rem
+  .Menu
+    &__link
+      font-size 1.4rem
 @media (max-width 667px)
   .Header
     &__top
@@ -102,3 +123,6 @@
       width 100%
       font-size 1.4rem
       line-height 2.2rem
+    &__button
+      font-size 1.4rem
+
