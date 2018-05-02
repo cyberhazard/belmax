@@ -100,3 +100,30 @@
     width 100%
     background-color #0083A0
     z-index 10
+  &__logo
+    display none
+.Hamburger
+  width 30px
+  display none
+  cursor pointer
+@media (max-width 1000px)
+  .Address
+    &__link
+      &:nth-child(3)
+        display none
+@media (max-width 667px)
+  .Address
+    &__container
+      padding 1rem 0
+    &__link
+      display none
+    &__logo
+      display block
+      & img
+        width 100%
+        max-width 11rem
+    &__select
+      display none
+  .Hamburger
+    display block
+
