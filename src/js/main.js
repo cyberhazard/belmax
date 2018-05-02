@@ -15,24 +15,24 @@ const contactsTabs = function(){
 [document.querySelector('.Gallery__top'),document.querySelector('.Gallery__bottom')]
   .forEach(lightGallery)
 
+const data = {
+  'Санкт-Петербург': {
+    email: 'mail@asda.com',
+    phone: '+7 964 850 49 35',
+    address: 'Пресненская наб. д.6 стр. 2, офис 123'
+  },
+  'Москва': {
+    email: 'val2@asda.com',
+    phone: '+7 964 850 49 35',
+    address: 'Преval3я наб. д.6 стр. 2, офис 123'
+  },
+  'Антверпен': {
+    email: 'val3@asda.com',
+    phone: '+7 964 850 49 35',
+    address: 'Прval3ая наб. д.6 стр. 2, офис 123'
+  },
+}
 void function() {
-  const data = {
-    'Санкт-Петербург': {
-      email: 'mail@asda.com',
-      phone: '+7 964 850 49 35',
-      address: 'Пресненская наб. д.6 стр. 2, офис 123'
-    },
-    'Москва': {
-      email: 'val2@asda.com',
-      phone: '+7 964 850 49 35',
-      address: 'Преval3я наб. д.6 стр. 2, офис 123'
-    },
-    'Антверпен': {
-      email: 'val3@asda.com',
-      phone: '+7 964 850 49 35',
-      address: 'Прval3ая наб. д.6 стр. 2, офис 123'
-    },
-  }
   const select = document.querySelector('.Select');
   const optionsBlock = document.querySelector('.Select__options');
   const options = [...document.querySelectorAll('.Select__option')];
@@ -51,7 +51,27 @@ void function() {
   })
 }();
 
+void function() {
+  const select = document.querySelector('.Mob-menu__select');
+  const optionsBlock = document.querySelector('.Mob-menu__select_options');
+  const options = [...document.querySelectorAll('.Mob-menu__select_option')];
+  const label = document.querySelector('.Mob-menu__select_label');
+  const contactsLinks = [...document.querySelectorAll('.Mob-menu__link')];
+  select.addEventListener('click', () => select.classList.toggle('active'));
+  select.addEventListener('blur', () => select.classList.remove('active'));
+  options.forEach(option => option.onclick = e => {
+    label.textContent = e.target.textContent;
+    select.dispatchEvent(new CustomEvent('change', {detail: { value: e.target.textContent }}))
+  });
+  select.addEventListener('change', (e) => {
+    contactsLinks[0].textContent = data[e.detail.value].email
+    contactsLinks[1].textContent = data[e.detail.value].phone
+    contactsLinks[2].textContent = data[e.detail.value].address
+  })
+}();
+
 const flotSlider = function(firstSlider,secondSlider,next,prev){
+  if(!document.querySelector(firstSlider)) return null
   var galleryTop = new Swiper(firstSlider, {
     slidesPerView: 1,
     initialSlide:2,
@@ -62,7 +82,6 @@ const flotSlider = function(firstSlider,secondSlider,next,prev){
       prevEl: prev,
     },
   });
-
   var galleryThumbs = new Swiper(secondSlider, {
       spaceBetween: 10,
       centeredSlides: true,
@@ -97,3 +116,13 @@ const flotTabs = function(){
 }()
 
 
+const mobileMenu = () => {
+  const hamburger = document.querySelector('.Hamburger');
+  const close = document.querySelector('.Mob-menu__close');
+  const menu = document.querySelector('.Mob-menu');
+  const items = [...document.querySelectorAll('.Mob-menu__item')];
+  items.forEach( el => el.onclick = () => menu.style.transform = '');
+  hamburger.onclick = () => (menu.style.transform = 'translateX(-100%)', document.body.style.overflow='hidden')
+  close.onclick = () => (menu.style.transform = '', document.body.style.overflow='')
+}
+mobileMenu()

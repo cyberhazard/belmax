@@ -2,9 +2,13 @@
   .g-wrapper
     .Address__container
       .Address__contacts
+        a(href="/").Address__logo
+          img(src="/images/logo.svg")
         a.Address__link(href="#") mail@asda.com
         a.Address__link(href="#") +7 964 850 49 35
         a.Address__link(href="#") Пресненская наб. д.6 стр. 2, офис 123
+      .Hamburger
+        include ../../images/humburger.svg
       .Address__select.Select(tabindex="1")
         .Select__label Санкт-Петербург
         .Select__options
