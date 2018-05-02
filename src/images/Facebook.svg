@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="52px" viewBox="0 0 43 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-29.0%" y="-65.8%" width="158.0%" height="252.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="News-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="News-Page-(Desktop)" transform="translate(-1313.000000, -425.000000)" fill="#FFFFFF">
+            <g id="#2" transform="translate(381.000000, 428.000000)">
+                <g id="News-Header" transform="translate(9.000000, 0.000000)">
+                    <g id="Share" transform="translate(800.000000, 0.000000)">
+                        <g id="Facebook" filter="url(#filter-1)" transform="translate(120.000000, 0.000000)">
+                            <g id="Social" transform="translate(20.000000, 8.000000)">
+                                <path d="M5.98403194,20 L1.99401198,20 L1.99401198,11.5002223 L0,11.5002223 L0,8.22476656 L1.99401198,8.22476656 L1.99401198,6.25989329 C1.99401198,3.58970654 3.11976048,2 6.31836327,2 L8.98103792,2 L8.98103792,5.27545576 L7.31736527,5.27545576 C6.07185629,5.27545576 5.98902196,5.73265896 5.98902196,6.58703868 L5.98403194,8.22476656 L9,8.22476656 L8.64670659,11.5002223 L5.98403194,11.5002223 L5.98403194,20 L5.98403194,20 Z" id="Facebook"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

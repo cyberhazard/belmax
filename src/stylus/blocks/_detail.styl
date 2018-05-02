@@ -1,0 +1,91 @@
+.Detail
+  padding 12rem 0 18rem
+  &__header
+    display flex
+    justify-content space-between
+    align-items center
+    margin-bottom 2rem
+  &__date
+    font-family OpenSans
+    font-size 1.8rem
+    color black
+    font-weight 600
+    opacity 0.5
+    & img
+      margin-right 1rem
+  &__socials
+    display flex
+    justify-content flex-start
+    align-items center
+  &__social
+    position relative
+    padding 0.8rem 2rem
+    border-radius 10rem
+    font-family OpenSans
+    font-size 1.4rem
+    color white
+    margin-right 2rem
+    padding-left 6.4rem
+    &:last-child
+      margin-right 0
+    &:before
+      content '\f189'
+      font-size 2rem
+      position absolute
+      left 2rem
+      top 50%
+      transform translateY(-50%)
+      font-family FontAwesome
+      color white
+    &_vk
+      background #4C77A6
+      &:before
+        content '\f189'
+    &_fb
+      background #3C5B97
+      &:before
+        content '\f09a'
+    &_twitter
+      background #2AA3EF
+      &:before
+        content '\f099'
+  &__title
+    width 80%
+    font-size 3rem
+    font-family RobotoSlab
+    font-weight 700
+    margin-bottom 4rem
+  &__about
+    font-size 1.6rem
+    font-family OpenSans
+    line-height 2.6rem
+    margin-bottom 6rem
+  &__other
+    padding 4rem 0
+    display flex
+    justify-content space-between
+    align-items stretch
+    border-top 0.1rem solid #E0E0E0
+    border-bottom 0.1rem solid #E0E0E0
+    margin-bottom 6rem
+  &__element
+    width 30%
+  &__buttons
+    display flex
+    justify-content center
+    align-items center
+  &__button
+    margin-right 3rem
+    &:last-child
+      margin-right 0
+    &_left
+      padding .4rem 2.4rem .4rem 0.4rem
+      & span
+        transform rotate(180deg)
+        margin-right 1rem
+        margin-left 0
+    &_right
+      background #0690AF
+      color white
+      border transparent
+
