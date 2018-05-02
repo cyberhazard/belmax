@@ -1,3 +1,25 @@
+const findLink = function(){
+  function _toConsumableArray(arr) {
+    if (Array.isArray(arr)) {
+      for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++){
+        arr2[i] = arr[i];
+      }
+        return arr2;
+      } else {
+        return Array.from(arr);
+      }
+  }
+  [].concat(_toConsumableArray(document.querySelectorAll('.Menu__link'))).forEach(function (li, i, arr) {
+    li.classList.remove('Menu__link_active');
+    console.log(li)
+    console.log(li.getAttribute('href'))
+    if(li.getAttribute('href') === location.pathname ) li.classList.add('Menu__link_active');
+    // console.log(li.getAttribute('href'), 'href')
+    // console.log(location.pathname)
+  });
+}
+findLink();
+
 const contactsTabs = function(){
   if(!document.querySelector('.Contacts')) return null
   const tabs = [...document.querySelectorAll('.Contacts__tab')]
