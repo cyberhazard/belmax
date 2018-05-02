@@ -1,0 +1,22 @@
+.Mini-header
+  include _address.pug
+  .Header__top
+    .g-wrapper
+      .Header__container
+          a.Header__logo(href="/"): img(src="/images/logo.svg")
+          nav.Header__menu.Menu
+            a.Menu__link(href="#") О компании
+            a.Menu__link(href="#") Флот
+            a.Menu__link(href="#") Пресс-центр
+            a.Menu__link(href="#") Контакты
+  .g-wrapper
+    .Mini-header__breadcrumbs
+      a(href="/").Mini-header__breadcrumbs_link
+        include ../../images/long-arrow.svg
+        span На главную
+      .Mini-header__breadcrumbs_separator
+        include ../../images/arrow-right.svg
+      a(href="/").Mini-header__breadcrumbs_link.Mini-header__breadcrumbs_link_current
+        span Пресс-центр
+    .Mini-header__title Пресс-центр
+

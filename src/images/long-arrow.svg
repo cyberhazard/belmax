@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="10px" viewBox="0 0 14 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Long Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Press" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Press-(Desktop)" transform="translate(-390.000000, -248.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="#1" transform="translate(0.000000, -2.000000)">
+                <g id="Breadcrumbs" transform="translate(390.000000, 243.000000)">
+                    <g id="Go-Home">
+                        <path d="M10.77438,13.5019931 C11.0594751,13.2171821 11.5083072,13.2171821 11.7934024,13.5019931 C12.0688659,13.7868041 12.0688659,14.235189 11.7934024,14.52 L7.52339674,18.7863918 C7.39112288,18.9185338 7.20748054,19 7.0039329,19 C6.80038526,19 6.61674292,18.9185338 6.48382695,18.7863918 L2.21382133,14.52 C1.92872622,14.235189 1.92872622,13.7868041 2.21382133,13.5019931 C2.49891645,13.2171821 2.94774862,13.2171821 3.23284373,13.5019931 L6.28027932,16.5566552 L6.28027932,5.71266896 C6.27963721,5.31560137 6.60582711,5 7.00329079,5 C7.40075447,5 7.71667068,5.31560137 7.71667068,5.71266896 L7.71667068,16.5560137 L10.77438,13.5019931 Z" id="Long-Arrow" transform="translate(7.000000, 12.000000) rotate(-270.000000) translate(-7.000000, -12.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
