@@ -5,13 +5,17 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     link(rel="stylesheet", href="/vendor/swiper.min.css")
+    link(rel="stylesheet", href="/vendor/alertify.core.css")
+    link(rel="stylesheet", href="/vendor/alertify.default.css")
     link(rel="stylesheet", href="/vendor/lightgallery/css/lightgallery.min.css")
     link(rel="stylesheet", href="/css/style.css")
     title
   body
     #wrapper
       block content
+      include ../blocks/_callbackPopup.pug
       include ../blocks/_mobile-menu.pug
     script(src="/vendor/swiper.min.js")
     script(src="/vendor/lightgallery/js/lightgallery.min.js")
+    script(src="/vendor/alertify.min.js")
     script(src="/js/main.js")
