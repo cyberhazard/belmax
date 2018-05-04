@@ -16,14 +16,14 @@ const headerSlider = function(){
         return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
       },
     },
-    breakpoints: {
-      667: {
-        navigation: {
-          nextEl: '.Header__slider_buttons_mobile .Header__slider_mobile_next',
-          prevEl: '.Header__slider_buttons_mobile .Header__slider_mobile_prev',
-        },
-      }
-    }
+    // breakpoints: {
+    //   667: {
+    //     navigation: {
+    //       nextEl: '.Header__slider_buttons_mobile .Header__slider_mobile_next',
+    //       prevEl: '.Header__slider_buttons_mobile .Header__slider_mobile_prev',
+    //     },
+    //   }
+    // }
   });
 }
 headerSlider();
