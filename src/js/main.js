@@ -1,13 +1,18 @@
 
 const headerSlider = function(){
   if(!document.querySelector('.Header__slider_container')) return null
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.Header__slider_container', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    autoHeight: true,
     pagination: {
       el: '.Header__slider_pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
+      },
     },
   });
 }
