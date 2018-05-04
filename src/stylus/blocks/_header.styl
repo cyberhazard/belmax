@@ -100,10 +100,9 @@
       border-radius 50%
       background-color #0690AF
 .Header__slider
-  &_bottom
-    display block
   &_button
     background none
+    cursor pointer
     &_prev
       left auto
       right 90% !important
@@ -117,7 +116,19 @@
     align-items center
     height 30px
     bottom 8rem
-
+  &_buttons_mobile
+    display none
+  &_buttons
+    width 100%
+    padding 0 2rem
+    position absolute
+    left 0
+    top 50%
+    transform tranlateY(-50%)
+    display flex
+    justify-content space-between
+    align-items center
+    z-index 5
 .Header__content .swiper-pagination-bullet {
   position relative
   width 5.6rem
@@ -215,7 +226,6 @@
   .Header__content .swiper-pagination-bullet
     font-size 2rem
   .Header__slider
-
     &_wrapper
       height 100% !important
     &_buttons_mobile
@@ -224,7 +234,10 @@
       position: absolute;
       left:50%;
       transform translateX(-50%)
-      bottom: 8rem;
+      bottom: 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     &_wrapper
       height 100%
     &_button

@@ -6,8 +6,8 @@ const headerSlider = function(){
     observer: true,
     observeParents: true,
     navigation: {
-      nextEl: '.Header__slider_button_next',
-      prevEl: '.Header__slider_button_prev',
+      nextEl: '#desk-next',
+      prevEl: '#desk-prev',
     },
     pagination: {
       el: '.Header__slider_pagination',
@@ -16,15 +16,16 @@ const headerSlider = function(){
         return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
       },
     },
-    // breakpoints: {
-    //   667: {
-    //     navigation: {
-    //       nextEl: '.Header__slider_buttons_mobile .Header__slider_mobile_next',
-    //       prevEl: '.Header__slider_buttons_mobile .Header__slider_mobile_prev',
-    //     },
-    //   }
-    // }
+    breakpoints: {
+      667: {
+        navigation: {
+          nextEl: '#mobile-next',
+          prevEl: '#mobile-prev',
+        },
+      }
+    }
   });
+  swiper.navigation.nextEl
 }
 headerSlider();
 
