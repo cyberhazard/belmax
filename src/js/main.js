@@ -1,3 +1,18 @@
+
+const headerSlider = function(){
+  if(!document.querySelector('.Header__slider_container')) return null
+  var swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.Header__slider_pagination',
+    },
+  });
+}
+headerSlider();
+
 const findLink = function(){
   function _toConsumableArray(arr) {
     if (Array.isArray(arr)) {
