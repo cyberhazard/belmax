@@ -100,6 +100,8 @@
       border-radius 50%
       background-color #0690AF
 .Header__slider
+  &_bottom
+    display block
   &_button
     background none
     &_prev
@@ -200,20 +202,28 @@
       max-width 320px
       width 100%
       font-size 2.4rem
+      padding 0 1rem
     &__text
       max-width 320px
       width 100%
       font-size 1.4rem
       line-height 2.2rem
+      margin-bottom 2rem
+      padding 0 1rem
     &__button
       font-size 1.4rem
   .Header__content .swiper-pagination-bullet
     font-size 2rem
   .Header__slider
+
+    &_wrapper
+      height 100% !important
     &_buttons_mobile
       width: 100%;
+      max-width 320px
       position: absolute;
-      left: 0;
+      left:50%;
+      transform translateX(-50%)
       bottom: 8rem;
     &_wrapper
       height 100%

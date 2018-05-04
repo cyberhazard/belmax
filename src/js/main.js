@@ -2,11 +2,13 @@
 const headerSlider = function(){
   if(!document.querySelector('.Header__slider_container')) return null
   var swiper = new Swiper('.Header__slider_container', {
+    autoHeight: true,
+    observer: true,
+    observeParents: true,
     navigation: {
       nextEl: '.Header__slider_button_next',
       prevEl: '.Header__slider_button_prev',
     },
-    autoHeight: true,
     pagination: {
       el: '.Header__slider_pagination',
       clickable: true,
@@ -17,8 +19,8 @@ const headerSlider = function(){
     breakpoints: {
       667: {
         navigation: {
-          nextEl: '.Header__slider_buttons_mobile .Header__slider_button_next',
-          prevEl: '.Header__slider_buttons_mobile .Header__slider_button_prev',
+          nextEl: '.Header__slider_buttons_mobile .Header__slider_mobile_next',
+          prevEl: '.Header__slider_buttons_mobile .Header__slider_mobile_prev',
         },
       }
     }
@@ -39,11 +41,7 @@ const findLink = function(){
   }
   [].concat(_toConsumableArray(document.querySelectorAll('.Menu__link'))).forEach(function (li, i, arr) {
     li.classList.remove('Menu__link_active');
-    console.log(li)
-    console.log(li.getAttribute('href'))
     if(li.getAttribute('href') === location.pathname ) li.classList.add('Menu__link_active');
-    // console.log(li.getAttribute('href'), 'href')
-    // console.log(location.pathname)
   });
 }
 findLink();
