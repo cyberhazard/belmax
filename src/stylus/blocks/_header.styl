@@ -116,68 +116,122 @@
     height 30px
     bottom 8rem
 
-.swiper-pagination-bullet {
+.Header__content .swiper-pagination-bullet {
   position relative
-  width 56px
-  height 20px
+  width 5.6rem
+  height 2rem
   font-family OpenSans
   position relative
   text-align: center;
-  font-size: 24px;
+  font-size: 2.4rem;
   color:white;
   opacity: 1;
   background: none;
   margin: 0 0 !important;
   transition 0.3s
 }
-.swiper-pagination-bullet
+.Header__content .swiper-pagination-bullet
   &:after
     content ''
     position absolute
     left 0
-    bottom -1.4rem
+    bottom -1.8rem
     width 100%
     height 0.3rem
     background white
     transition 0.3s
-.swiper-pagination-bullet-active {
+.Header__content .swiper-pagination-bullet-active {
   color:#0690AF;
   background: none;
 }
-.swiper-pagination-bullet-active
+.Header__content .swiper-pagination-bullet-active
   &:after
     content ''
     position absolute
     left 0
-    bottom -1.4rem
+    bottom -1.8rem
     width 100%
     height 0.3rem
     background #0690AF
     transition 0.3s
+.Header__slider_button_prev, .Header__slider_button_next
+  width 60px
+  height 60px
 
 @media (max-width 1000px)
   .Header
     &__heading
+      max-width 60rem
+      width 100%
       font-size 3.6rem
     &__text
+      max-width 60rem
+      width 100%
       font-size 1.6rem
       line-height 2.4rem
     &__button
       font-size 1.6rem
+  .Header__slider
+    &_button
+      background none
+      &_prev
+        left auto
+        right 94% !important
+        & svg
+          width 50px
+          height 50px
+      &_next
+        left 94%
+        & svg
+          width 50px
+          height 50px
   .Menu
     &__link
       font-size 1.4rem
+  .Header__slider_button_prev, .Header__slider_button_next
+    width 50px
+    height 50px
+
 @media (max-width 667px)
   .Header
     &__top
       display none
     &__heading
+      max-width 320px
       width 100%
       font-size 2.4rem
     &__text
+      max-width 320px
       width 100%
       font-size 1.4rem
       line-height 2.2rem
     &__button
       font-size 1.4rem
+  .Header__content .swiper-pagination-bullet
+    font-size 2rem
+  .Header__slider
+    &_buttons_mobile
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 8rem;
+    &_wrapper
+      height 100%
+    &_button
+      display none
+      &_prev
+        right 80% !important
+        & svg
+          width 44px
+          height 44px
+      &_next
+        left 80%
+        & svg
+          width 44px
+          height 44px
 
+  .Header__slider_buttons_mobile .Header__slider_button
+    display block
+  .Header__slider_buttons_mobile .swiper-button-next, .Header__slider_buttons_mobile .swiper-button-prev
+    width 44px
+    height 44px

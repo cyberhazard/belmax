@@ -3,8 +3,8 @@ const headerSlider = function(){
   if(!document.querySelector('.Header__slider_container')) return null
   var swiper = new Swiper('.Header__slider_container', {
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.Header__slider_button_next',
+      prevEl: '.Header__slider_button_prev',
     },
     autoHeight: true,
     pagination: {
@@ -14,6 +14,14 @@ const headerSlider = function(){
         return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
       },
     },
+    breakpoints: {
+      667: {
+        navigation: {
+          nextEl: '.Header__slider_buttons_mobile .Header__slider_button_next',
+          prevEl: '.Header__slider_buttons_mobile .Header__slider_button_prev',
+        },
+      }
+    }
   });
 }
 headerSlider();
