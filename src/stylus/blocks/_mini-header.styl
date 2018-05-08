@@ -12,13 +12,36 @@
       color white
       font-size 1.6rem
       margin-right 2rem
+      &_main
+        position relative
+        padding-left 3rem
+        &:after
+          content ''
+          width 14px
+          height 10px
+          background url('../../images/long-arrow.svg') center center/contain no-repeat
+          position absolute
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
       & svg
         margin-right 1rem
       &_current
         opacity 0.5
     &_separator
-      padding-top 0.4rem
+      position relative
+      width 6px
+      height 10px
       margin-right 2rem
+      &:after
+        content ''
+        width 6px
+        height 10px
+        background url('../../images/arrow-right.svg') center center/contain no-repeat
+        position absolute
+        left 0
+        top: 50%;
+        transform: translateY(-50%);
   &__title
       text-align center
       color white
