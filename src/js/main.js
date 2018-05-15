@@ -246,3 +246,16 @@ const callbackPopup = () => {
 
 }
 callbackPopup();
+
+const moreNews = function(){
+  if(!document.querySelector('.News__button_more')) return null;
+  const news = document.querySelectorAll('.News__item_main');
+  const button = document.querySelector('.News__button_more');
+  button.onclick = e => {
+    news.forEach(el => {
+      el.style.display = "block";
+      button.style.display = "none";
+    })
+  }
+}
+moreNews();
